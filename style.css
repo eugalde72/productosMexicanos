@@ -1,0 +1,22 @@
+*{
+    font-family:cursive;
+}
+#barra1{
+    color: white;
+    width:100%;
+    background-color:black;
+    vertical-align: middle;
+}
+
+#p{
+    display: table-cell;
+    font-family:Courier;
+    height: 60px;
+    vertical-align: middle;
+    
+}
+
+p{
+    text-align: center;
+    font-size: xx-large;
+}
