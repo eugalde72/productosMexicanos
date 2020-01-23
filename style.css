@@ -4,7 +4,7 @@
 #barra1{
     color: white;
     width:100%;
-    background-color:black;
+    background-color:green;
     vertical-align: middle;
 }
 
@@ -16,7 +16,7 @@
     
 }
 
-p{
+.uno {
     text-align: center;
     font-size: xx-large;
 }
