@@ -10,25 +10,52 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js" integrity="sha384-6khuMg9gaYr5AxOqhkVIODVIvm9ynTT5J4V1cfthmT+emCG6yVmEZsRHdxlotUnm" crossorigin="anonymous"></script>
-<link rel="stylesheet" href="style.css">
+    
+    <link rel="stylesheet" href="style.css">
+    <script src="scripts.js"></script>
 
+    <script>
+            //window.onload = codeAddress;
+            window.onload = function () {
+    if (localStorage.getItem("hasCodeRunBefore") === null) {
+        /** Your code here. **/
+            codeAddress();
+        localStorage.setItem("hasCodeRunBefore", true);
+    }
+}
+    </script>
 </head>
 <body>
-        <div id="barra1">
-                <p id="p">BuscasProductosDeMexico.com</p>
+        <div class="barra1">
+            <div class="box1">
+                <p id="p">QuieroProductosDeMexico.com</p> 
             </div>
-    <div class="uno">
+            
+        
+        
+        </div>
+        <div class="uno">
+            <!-- 
             <p class="text1">Si pudieras conseguir Productos Mexicanos que te los enviaran a cualquier parte del mundo.</p>
             <p class="text1">¿Qué productos Mexicanos buscarías?</p>
+            -->
+            <p>Si pudieras conseguir Productos Mexicanos que te los enviaran a cualquier parte del mundo.</p>
+            <p>¿Qué productos Mexicanos buscarías?</p>
         
-    </div>
+        </div>
+
+
     <div class="captura">
-        <label id="e1">País donde Vives:</label>
-        <select name="pais">
+        <label id="e1">País donde Vives: </label>
+        <select id="xpais" name="xpais">
+                <option value="00" selected>--</option>
                 <option value="AF">Afganistán</option>
                 <option value="AL">Albania</option>
                 <option value="DE">Alemania</option>
@@ -176,7 +203,7 @@
                 <option value="MU">Mauricio</option>
                 <option value="MR">Mauritania</option>
                 <option value="YT">Mayotte</option>
-                <option value="MX" selected>México</option>
+                <option value="MX">México</option>
                 <option value="FM">Micronesia</option>
                 <option value="MD">Moldavia</option>
                 <option value="MC">Mónaco</option>
@@ -264,15 +291,34 @@
                 <option value="ZM">Zambia</option>
                 <option value="ZW">Zimbabue</option>
                 </select>
-        <textarea placeholder="Describe tus productos Mexicanos ....."></textarea>
+        <textarea id="ta" placeholder="Describe aquí tus productos Mexicanos .....(Y al final presiona el botón rojo de Enviar)"></textarea>
     </div>
+
+
+    <div class="box2">
+        <a href="mailto:contacto@quieroproductosdemexico.com"><i class="fa fa-envelope"></i>contacto@quieroproductosdemexico.com</a>
+    </div>
+
+
     <div id="bb">
-            <button>Enviar</button>
+            <!--<input id="in" type="button" value="Enviar" onclick="go(xpais.value,ta.value)">
+            -->
+            <button id="in" onclick="go(xpais.value,ta.value)">Enviar</button>
     </div>
-    
+
+    <img src="Productos-Jaliscienses.jpg" alt="Smiley face">
+    <img src="exportacion_mexico.jpg" alt="Smiley face">
+    <img src="talavera.jpg" alt="Smiley face">
+    <img src="artesanias.jpg" alt="Smiley face">
+    <img src="munecas.jpg" alt="Smiley face">
+    <img src="pinatas.jpg" alt="Smiley face">
     
 
-   
+
+
+
+
+ 
 
 </body>
 </html>

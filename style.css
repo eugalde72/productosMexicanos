@@ -1,45 +1,74 @@
 *{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
     font-family:cursive;
 }
-#barra1{
+
+@media only screen and (max-width: 600px) {
+    body {
+      /*background-color: pink;*/
+      font-size: 12px;
+    }
+    select{
+        width: 120px;
+    }
+    img{
+        height:12px;
+        width: 50px;
+    }
+
+  }
+
+.barra1{
     color: white;
     width:100%;
+    height: 35px;
+    
     background-color:green;
-    vertical-align: middle;
+    /*display:flex;*/
+}
+
+.box1{
+    margin-left:13%;
+}
+
+p{
+    font-size:180%;
+    text-align: center;
 }
 
 #p{
-    margin-left: 155px;
-    /*display: table-cell;
-    vertical-align: middle;*/
-    font-family:Courier;
-    height: 60px;
-    padding:20px 155px 0 0;
-    
-    
-    
+    font-size: 20px;
 }
 
-.text1 {
-    margin-left: 155px;
-    padding: 10px 155px 0 0 ;
-    text-align: center;
-    font-size: xx-large;
+.box2{
+    margin-left:13%;
+    /*position: absolute;
+    right:10%;*/
 }
+
+a{
+    color:green;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
 
 textarea, input {
     display:block;
     margin-left:auto;
     margin-right:auto;
+    font-family: Arial, Helvetica, sans-serif;
    
 }
 
 textarea{
+    border: 4px solid #999999;
     width: 75%;
     height: 200px;
 }
 
-button{
+#in{
     /*position:absolute;
     top:70%;
     right: 180px;
@@ -60,5 +89,12 @@ button{
 }
 
 #bb{
-    padding-top:20px;
+    padding-top:15px;
+    padding-bottom: 15px;
+
+}
+
+img{
+    height:125px;
+    width: 188px;
 }
